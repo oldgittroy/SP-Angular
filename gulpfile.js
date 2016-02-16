@@ -16,7 +16,7 @@ gulp.task('build-hspug', function () {
    gulp.src(dev)
    .pipe(babel())
    .pipe(concat('h-spug.js'))
-   .pipe(gulp.dest('./'))
+   .pipe(gulp.dest('./dist'))
    ;
    
    
