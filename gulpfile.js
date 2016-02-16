@@ -1,10 +1,10 @@
 var gulp = require('gulp');
 var config = require('./gulp.config')();
-var $ = require('gulp-load-plugins')();
+var concat = require('gulp-concat')
 var babel = require('gulp-babel');
 
 gulp.task('default', function () {
-    //$.util.log('***Task: ', $.util.colors.magenta('gulp build-hspug'));
+
 });
 
 gulp.task('build-hspug', function () {
@@ -15,8 +15,8 @@ gulp.task('build-hspug', function () {
    
    gulp.src(dev)
    .pipe(babel())
-   .pipe($.concat('test.js'))
-   //.pipe(gulp.dest('./'))
+   .pipe(concat('h-spug.js'))
+   .pipe(gulp.dest('./'))
    ;
    
    
